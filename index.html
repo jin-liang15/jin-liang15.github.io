@@ -1,260 +1,196 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="金亮，国防科技大学电子科学学院。研究方向包括 MIMO、智能编码与传输。"
-    />
-    <meta name="theme-color" content="#0b2a3b" />
-    <title>金亮 | Liang Jin</title>
+    <meta name="description" content="Academic homepage of Liang Jin, National University of Defense Technology." />
+    <title>Liang Jin | Academic Homepage</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: #111;
+        background: #fff;
+        font-family: Arial, Helvetica, "Microsoft YaHei", sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      .page {
+        width: min(980px, calc(100% - 28px));
+        margin: 0 auto;
+        padding: 28px 14px 50px;
+        border-top: 6px solid #514060;
+      }
+      a { color: #0645ad; }
+      a:hover { color: #b00000; }
+      .profile {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 24px;
+        align-items: start;
+        margin-bottom: 30px;
+      }
+      .photo {
+        width: 140px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        background: #eee;
+        border: 1px solid #ccc;
+      }
+      .photo strong { font-size: 42px; font-weight: normal; }
+      .photo span { margin-top: 6px; font-size: 12px; }
+      h1 { margin: 0 0 2px; font-size: 27px; line-height: 1.3; }
+      .profile p { margin: 3px 0; }
+      h2 { margin: 24px 0 12px; color: #079000; font-size: 21px; }
+      h3 { margin: 18px 0 12px; font-size: 17px; }
+      .bio, .papers li { text-align: justify; }
+      .papers { margin: 0; padding: 0; list-style: none; }
+      .papers li { margin-bottom: 18px; }
+      .paper-code { white-space: nowrap; font-weight: bold; }
+      .footer {
+        margin-top: 36px;
+        padding-top: 12px;
+        border-top: 1px solid #ccc;
+        color: #666;
+        font-size: 12px;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        body { font-size: 14px; }
+        .page { width: 100%; padding: 20px 16px 36px; }
+        .profile { grid-template-columns: 1fr; gap: 14px; }
+        .photo { width: 110px; height: 140px; }
+        h1 { font-size: 24px; }
+      }
+      @media print {
+        .page { width: 100%; border-top: 0; padding: 0; }
+        a { color: #111; text-decoration: none; }
+      }
+    </style>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳转到正文</a>
-
-    <header class="site-header" id="top">
-      <div class="nav-shell">
-        <a class="brand" href="#top" aria-label="返回首页">
-          <span class="brand-mark">JL</span>
-          <span>Liang Jin</span>
-        </a>
-        <nav class="desktop-nav" aria-label="页面导航">
-          <a href="#about"><span data-lang="zh">简介</span><span data-lang="en">About</span></a>
-          <a href="#research"><span data-lang="zh">研究</span><span data-lang="en">Research</span></a>
-          <a href="#publications"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
-          <a href="#code"><span data-lang="zh">代码</span><span data-lang="en">Code</span></a>
-        </nav>
-        <button class="language-toggle" type="button" aria-label="Switch language">EN</button>
-      </div>
-    </header>
-
-    <main id="main">
-      <section class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span data-lang="zh">学术主页</span><span data-lang="en">Academic Homepage</span></p>
-          <h1><span data-lang="zh">金亮</span><span data-lang="en">Liang Jin</span></h1>
-          <p class="hero-role">
-            <span data-lang="zh">国防科技大学 · 电子科学学院</span>
-            <span data-lang="en">College of Electronic Science · National University of Defense Technology</span>
+    <main class="page">
+      <header class="profile">
+        <div class="photo" aria-label="Photo placeholder">
+          <strong>JL</strong>
+          <span>PHOTO</span>
+        </div>
+        <div>
+          <h1>Liang Jin 金亮</h1>
+          <p>College of Electronic Science, National University of Defense Technology</p>
+          <p>电子科学学院，国防科技大学</p>
+          <p><strong>Research Interests:</strong> MIMO, intelligent coding and transmission</p>
+          <p><strong>E-mail:</strong> <a href="mailto:jinliang15@nudt.edu.cn">jinliang15@nudt.edu.cn</a></p>
+          <p>
+            <strong>Profiles:</strong>
+            <a href="https://xplorestaging.ieee.org/author/37089383878">IEEE Xplore</a> |
+            <a href="https://scholar.google.com/citations?user=-fC_6mIAAAAJ&amp;hl=en">Google Scholar</a> |
+            <a href="https://github.com/L-Jin-bupt/">GitHub</a>
           </p>
-          <p class="hero-summary">
-            <span data-lang="zh">聚焦 MIMO、智能编码与智能传输，探索面向未来无线系统的高效信息表达与可靠传输方法。</span>
-            <span data-lang="en">Researching MIMO, intelligent coding, and intelligent transmission for efficient and reliable future wireless systems.</span>
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#publications">
-              <span data-lang="zh">查看论文</span><span data-lang="en">View Publications</span>
-            </a>
-            <a class="button button-secondary" href="mailto:jinliang15@nudt.edu.cn">
-              <span data-lang="zh">联系我</span><span data-lang="en">Contact Me</span>
-            </a>
-          </div>
-          <div class="profile-links" aria-label="学术与代码主页">
-            <a href="https://xplorestaging.ieee.org/author/37089383878" target="_blank" rel="noreferrer">IEEE Xplore</a>
-            <a href="https://scholar.google.com/citations?user=-fC_6mIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="https://github.com/L-Jin-bupt/" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
         </div>
+      </header>
 
-        <aside class="hero-card reveal" aria-label="个人信息卡片">
-          <div class="portrait" aria-hidden="true">
-            <span>JL</span>
-            <div class="signal signal-one"></div>
-            <div class="signal signal-two"></div>
-            <div class="signal signal-three"></div>
-          </div>
-          <div class="mini-stats">
-            <div><strong>12</strong><span data-lang="zh">公开论文</span><span data-lang="en">Publications</span></div>
-            <div><strong>5</strong><span data-lang="zh">开源项目</span><span data-lang="en">Code Repos</span></div>
-            <div><strong>3</strong><span data-lang="zh">研究方向</span><span data-lang="en">Research Areas</span></div>
-          </div>
-        </aside>
+      <section>
+        <h2>Biography</h2>
+        <p class="bio">
+          Liang Jin is with the College of Electronic Science, National University of Defense Technology.
+          His research interests include multiple-input multiple-output (MIMO) communications,
+          intelligent coding, and intelligent transmission. His recent research covers holographic MIMO,
+          spatiotemporal channel coding, reconfigurable intelligent surfaces, and transmission design for
+          next-generation wireless communication systems.
+        </p>
       </section>
 
-      <section class="section section-shell" id="about">
-        <div class="section-heading reveal">
-          <p class="section-index">01</p>
-          <div>
-            <p class="eyebrow"><span data-lang="zh">个人简介</span><span data-lang="en">About</span></p>
-            <h2><span data-lang="zh">关于我</span><span data-lang="en">About Me</span></h2>
-          </div>
-        </div>
-        <div class="about-grid reveal">
-          <div class="about-copy">
-            <p data-lang="zh">金亮现工作于国防科技大学电子科学学院，研究兴趣包括多输入多输出（MIMO）通信、智能编码与智能传输。相关研究涵盖全息 MIMO、时空信道编码、可重构智能表面及面向下一代无线网络的传输设计。</p>
-            <p data-lang="en">Liang Jin is with the College of Electronic Science, National University of Defense Technology. His research interests include multiple-input multiple-output (MIMO) communications, intelligent coding, and intelligent transmission, with recent work spanning holographic MIMO, spatiotemporal channel coding, reconfigurable intelligent surfaces, and transmission design for next-generation wireless networks.</p>
-          </div>
-          <dl class="contact-list">
-            <div><dt>Email</dt><dd><a href="mailto:jinliang15@nudt.edu.cn">jinliang15@nudt.edu.cn</a></dd></div>
-            <div><dt><span data-lang="zh">单位</span><span data-lang="en">Affiliation</span></dt><dd><span data-lang="zh">国防科技大学电子科学学院</span><span data-lang="en">College of Electronic Science, NUDT</span></dd></div>
-            <div><dt><span data-lang="zh">位置</span><span data-lang="en">Location</span></dt><dd><span data-lang="zh">中国 · 长沙</span><span data-lang="en">Changsha, China</span></dd></div>
-          </dl>
-        </div>
+      <section>
+        <h2>Publications</h2>
+        <h3>Journal Papers</h3>
+        <ol class="papers">
+          <li>
+            [J8] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, P. Zhang, and C. Yuen,
+            “Multi-Stream Spatiotemporal Channel Coding for MIMO Systems: Transmission Scheme Design and
+            Achievable Rate Optimization,” <em>IEEE Transactions on Wireless Communications</em>, 2026.
+            <a class="paper-code" href="https://github.com/L-Jin-bupt/Multi-Stream-STCC-for-MIMO-Systems-Transmission-Scheme-Design-and-Achievable-Rate-Optimization">[Code]</a>
+          </li>
+          <li>
+            [J7] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, P. Zhang, and C. Yuen,
+            “Achievable Rate of Multi-Stream Spatiotemporal Channel Coding With Linear Receivers,”
+            <em>IEEE Wireless Communications Letters</em>, vol. 15, pp. 845–849, 2025.
+            <a class="paper-code" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-Multi-Stream-Spatiotemporal-Channel-Coding-with-Linear-Receivers">[Code]</a>
+          </li>
+          <li>
+            [J6] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, P. Zhang, and C. Yuen,
+            “Achievable Rate of a Space-Time Encoded Holographic MIMO,”
+            <em>IEEE Transactions on Wireless Communications</em>, vol. 25, pp. 133–147, 2025.
+            <a class="paper-code" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-a-Space-Time-Encoded-Holographic-MIMO">[Code]</a>
+          </li>
+          <li>
+            [J5] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, P. Zhang, and C. Yuen,
+            “Achievable Rate of Linear Holographic MIMO With Arbitrary Aperture-Length,”
+            <em>IEEE Transactions on Wireless Communications</em>, vol. 23, no. 11,
+            pp. 16742–16756, 2024.
+            <a class="paper-code" href="https://github.com/L-Jin-bupt/Achievable-rate-of-HMIMO">[Code]</a>
+          </li>
+          <li>
+            [J4] X. Chi, X. Qin, X. Xu, S. Han, <strong>L. Jin</strong>, and P. Zhang,
+            “Age of Model: A Metric for Keeping AI Models Up-to-Date in Edge Intelligence-Enabled IoV,”
+            <em>IEEE Transactions on Vehicular Technology</em>, vol. 73, no. 9,
+            pp. 13047–13059, 2024.
+          </li>
+          <li>
+            [J3] X. Chi, S. Han, X. Xu, L. Li, H. Wang, X. Qin, <strong>L. Jin</strong>, and P. Zhang,
+            “Source Value-Based Resource Allocation in Task-Oriented Communications,”
+            <em>IEEE Internet of Things Journal</em>, vol. 11, no. 24, pp. 39395–39408, 2024.
+          </li>
+          <li>
+            [J2] S. Han, <strong>L. Jin</strong>, X. Xu, X. Tao, and P. Zhang,
+            “R3C: Reliability and Control Cost Co-Aware in RIS-Assisted Wireless Control Systems for IIoT,”
+            <em>IEEE Internet of Things Journal</em>, vol. 11, no. 8, pp. 13692–13707, 2024.
+          </li>
+          <li>
+            [J1] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, S. Lv, P. Zhang, and C. Liu,
+            “Computation Offloading Outage Probability Analysis and Min-Max Fairness Optimization in
+            RIS-Assisted MEC System,” <em>IEEE Transactions on Vehicular Technology</em>, vol. 72,
+            no. 4, pp. 4615–4627, 2023.
+            <a class="paper-code" href="https://github.com/L-Jin-bupt/Computation-Offloading-Outage-Probability-Analysis-and-Min-Max-Fair.-Opt.-in-RIS-assisted-MEC-System">[Code]</a>
+          </li>
+        </ol>
+
+        <h3>Conference Papers</h3>
+        <ol class="papers">
+          <li>
+            [C3] J. Wang, X. Xu, M. Sun, <strong>L. Jin</strong>, and B. Liu,
+            “Secure Transmission in Active RIS-Assisted Cell-Free MU-MISO Networks,”
+            in <em>Proc. IEEE International Conference on Communications Workshops (ICC Workshops)</em>, 2024.
+          </li>
+          <li>
+            [C2] M. Wei, X. Xu, <strong>L. Jin</strong>, Y. Li, S. Han, and B. Liu,
+            “Secure Transmission Fairness in IRS-Assisted Cell-Free Network,”
+            in <em>Proc. IEEE Wireless Communications and Networking Conference (WCNC)</em>, pp. 1–6, 2023.
+          </li>
+          <li>
+            [C1] <strong>L. Jin</strong>, X. Xu, S. Han, J. Liu, R. Meng, and H. Chen,
+            “RIS-Assisted Physical Layer Key Generation and Transmit Power Minimization,”
+            in <em>Proc. IEEE Wireless Communications and Networking Conference (WCNC)</em>,
+            pp. 2065–2070, 2022.
+          </li>
+        </ol>
+
+        <h3>Preprints</h3>
+        <ol class="papers">
+          <li>
+            [P1] <strong>L. Jin</strong>, X. Xu, S. Han, X. Chi, P. Zhang, and C. Yuen,
+            “Achievable Rate of Spatiotemporal Channel Coding for MIMO with Multiple Streams,”
+            <em>TechRxiv</em>, 2025.
+          </li>
+        </ol>
       </section>
 
-      <section class="section section-shell" id="research">
-        <div class="section-heading reveal">
-          <p class="section-index">02</p>
-          <div>
-            <p class="eyebrow"><span data-lang="zh">研究兴趣</span><span data-lang="en">Research Interests</span></p>
-            <h2><span data-lang="zh">研究方向</span><span data-lang="en">Research Areas</span></h2>
-          </div>
-        </div>
-        <div class="research-grid">
-          <article class="research-card reveal">
-            <span class="card-number">01</span>
-            <div class="research-icon" aria-hidden="true">M×N</div>
-            <h3>MIMO</h3>
-            <p data-lang="zh">面向大规模与全息阵列的信道建模、传输设计和可达速率分析。</p>
-            <p data-lang="en">Channel modeling, transmission design, and achievable-rate analysis for massive and holographic arrays.</p>
-          </article>
-          <article class="research-card reveal">
-            <span class="card-number">02</span>
-            <div class="research-icon" aria-hidden="true">{01}</div>
-            <h3><span data-lang="zh">智能编码</span><span data-lang="en">Intelligent Coding</span></h3>
-            <p data-lang="zh">研究融合空间、时间与信道特性的高效编码机制和可实现接收方案。</p>
-            <p data-lang="en">Efficient coding mechanisms and practical receivers that jointly exploit space, time, and channel structure.</p>
-          </article>
-          <article class="research-card reveal">
-            <span class="card-number">03</span>
-            <div class="research-icon" aria-hidden="true">↝</div>
-            <h3><span data-lang="zh">智能传输</span><span data-lang="en">Intelligent Transmission</span></h3>
-            <p data-lang="zh">利用优化与智能方法提升复杂无线环境中的频谱效率、可靠性与公平性。</p>
-            <p data-lang="en">Optimization and intelligent methods for spectral efficiency, reliability, and fairness in complex wireless environments.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-shell" id="publications">
-        <div class="section-heading reveal">
-          <p class="section-index">03</p>
-          <div>
-            <p class="eyebrow"><span data-lang="zh">学术成果</span><span data-lang="en">Academic Work</span></p>
-            <h2><span data-lang="zh">代表性论文</span><span data-lang="en">Selected Publications</span></h2>
-          </div>
-          <a class="text-link heading-link" href="https://xplorestaging.ieee.org/author/37089383878" target="_blank" rel="noreferrer">
-            <span data-lang="zh">全部论文 ↗</span><span data-lang="en">All publications ↗</span>
-          </a>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication reveal">
-            <div class="pub-year">2026</div>
-            <div class="pub-content">
-              <h3>Multi-Stream Spatiotemporal Channel Coding for MIMO Systems: Transmission Scheme Design and Achievable Rate Optimization</h3>
-              <p><strong>Liang Jin</strong>, Xiaodong Xu, Shujun Han, Xiaoyu Chi, Ping Zhang, and Chau Yuen</p>
-              <p class="venue">IEEE Transactions on Wireless Communications</p>
-              <a class="tag" href="https://github.com/L-Jin-bupt/Multi-Stream-STCC-for-MIMO-Systems-Transmission-Scheme-Design-and-Achievable-Rate-Optimization" target="_blank" rel="noreferrer">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="publication reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3>Achievable Rate of Multi-Stream Spatiotemporal Channel Coding With Linear Receivers</h3>
-              <p><strong>Liang Jin</strong>, Xiaodong Xu, Shujun Han, Xiaoyu Chi, Ping Zhang, and Chau Yuen</p>
-              <p class="venue">IEEE Wireless Communications Letters, vol. 15, pp. 845–849</p>
-              <a class="tag" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-Multi-Stream-Spatiotemporal-Channel-Coding-with-Linear-Receivers" target="_blank" rel="noreferrer">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="publication reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3>Achievable Rate of a Space-Time Encoded Holographic MIMO</h3>
-              <p><strong>Liang Jin</strong>, Xiaodong Xu, Shujun Han, Xiaoyu Chi, Ping Zhang, and Chau Yuen</p>
-              <p class="venue">IEEE Transactions on Wireless Communications, vol. 25, pp. 133–147</p>
-              <a class="tag" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-a-Space-Time-Encoded-Holographic-MIMO" target="_blank" rel="noreferrer">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="publication reveal">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <h3>Achievable Rate of Linear Holographic MIMO With Arbitrary Aperture-Length</h3>
-              <p><strong>Liang Jin</strong>, Xiaodong Xu, Shujun Han, Xiaoyu Chi, Ping Zhang, and Chau Yuen</p>
-              <p class="venue">IEEE Transactions on Wireless Communications, vol. 23, no. 11, pp. 16742–16756</p>
-              <a class="tag" href="https://github.com/L-Jin-bupt/Achievable-rate-of-HMIMO" target="_blank" rel="noreferrer">Code ↗</a>
-            </div>
-          </article>
-
-          <article class="publication reveal">
-            <div class="pub-year">2023</div>
-            <div class="pub-content">
-              <h3>R3C: Reliability and Control Cost Co-Aware in RIS-Assisted Wireless Control Systems for IIoT</h3>
-              <p>Shujun Han, <strong>Liang Jin</strong>, Xiaodong Xu, Xiaohui Tao, and Ping Zhang</p>
-              <p class="venue">IEEE Internet of Things Journal, vol. 11, no. 8, pp. 13692–13707</p>
-            </div>
-          </article>
-
-          <article class="publication reveal">
-            <div class="pub-year">2022</div>
-            <div class="pub-content">
-              <h3>Computation Offloading Outage Probability Analysis and Min-Max Fairness Optimization in RIS-Assisted MEC System</h3>
-              <p><strong>Liang Jin</strong>, Xiaodong Xu, Shujun Han, Xiaoyu Chi, Shuaifei Lv, Ping Zhang, and Cheng Liu</p>
-              <p class="venue">IEEE Transactions on Vehicular Technology, vol. 72, no. 4, pp. 4615–4627</p>
-              <a class="tag" href="https://github.com/L-Jin-bupt/Computation-Offloading-Outage-Probability-Analysis-and-Min-Max-Fair.-Opt.-in-RIS-assisted-MEC-System" target="_blank" rel="noreferrer">Code ↗</a>
-            </div>
-          </article>
-        </div>
-
-        <details class="more-publications reveal">
-          <summary><span data-lang="zh">查看其余论文（6）</span><span data-lang="en">View six more publications</span></summary>
-          <ol>
-            <li><span>Age of Model: A Metric for Keeping AI Models Up-to-Date in Edge Intelligence-Enabled IoV.</span><em>IEEE Transactions on Vehicular Technology, 2024.</em></li>
-            <li><span>Source Value-Based Resource Allocation in Task-Oriented Communications.</span><em>IEEE Internet of Things Journal, 2024.</em></li>
-            <li><span>Secure Transmission in Active RIS-Assisted Cell-Free MU-MISO Networks.</span><em>IEEE ICC Workshops, 2024.</em></li>
-            <li><span>Secure Transmission Fairness in IRS-Assisted Cell-Free Network.</span><em>IEEE WCNC, 2023.</em></li>
-            <li><span>RIS-Assisted Physical Layer Key Generation and Transmit Power Minimization.</span><em>IEEE WCNC, 2022.</em></li>
-            <li><span>Achievable Rate of Spatiotemporal Channel Coding for MIMO with Multiple Streams.</span><em>TechRxiv, 2025.</em></li>
-          </ol>
-        </details>
-      </section>
-
-      <section class="section section-shell" id="code">
-        <div class="section-heading reveal">
-          <p class="section-index">04</p>
-          <div>
-            <p class="eyebrow"><span data-lang="zh">开放研究</span><span data-lang="en">Open Research</span></p>
-            <h2><span data-lang="zh">论文代码</span><span data-lang="en">Research Code</span></h2>
-          </div>
-          <a class="text-link heading-link" href="https://github.com/L-Jin-bupt?tab=repositories" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
-        <div class="code-grid">
-          <a class="code-card reveal" href="https://github.com/L-Jin-bupt/Multi-Stream-STCC-for-MIMO-Systems-Transmission-Scheme-Design-and-Achievable-Rate-Optimization" target="_blank" rel="noreferrer"><span>MATLAB · 2026</span><h3>Multi-Stream STCC for MIMO Systems</h3><p data-lang="zh">多流时空信道编码的传输方案与可达速率优化。</p><p data-lang="en">Transmission scheme design and achievable-rate optimization for multi-stream STCC.</p><strong>View repository ↗</strong></a>
-          <a class="code-card reveal" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-Multi-Stream-Spatiotemporal-Channel-Coding-with-Linear-Receivers" target="_blank" rel="noreferrer"><span>MATLAB · 2025</span><h3>Multi-Stream STCC With Linear Receivers</h3><p data-lang="zh">面向线性接收机的多流时空信道编码仿真。</p><p data-lang="en">Simulation code for multi-stream STCC with linear receivers.</p><strong>View repository ↗</strong></a>
-          <a class="code-card reveal" href="https://github.com/L-Jin-bupt/Achievable-Rate-of-a-Space-Time-Encoded-Holographic-MIMO" target="_blank" rel="noreferrer"><span>MATLAB · 2025</span><h3>Space-Time Encoded Holographic MIMO</h3><p data-lang="zh">空时编码全息 MIMO 的可达速率分析。</p><p data-lang="en">Achievable-rate analysis for space-time encoded holographic MIMO.</p><strong>View repository ↗</strong></a>
-          <a class="code-card reveal" href="https://github.com/L-Jin-bupt/Achievable-rate-of-HMIMO" target="_blank" rel="noreferrer"><span>MATLAB · 2024</span><h3>Linear Holographic MIMO</h3><p data-lang="zh">任意孔径长度下线性全息 MIMO 的数值结果。</p><p data-lang="en">Numerical results for linear holographic MIMO with arbitrary aperture length.</p><strong>View repository ↗</strong></a>
-          <a class="code-card reveal" href="https://github.com/L-Jin-bupt/Computation-Offloading-Outage-Probability-Analysis-and-Min-Max-Fair.-Opt.-in-RIS-assisted-MEC-System" target="_blank" rel="noreferrer"><span>MATLAB · 2022</span><h3>RIS-Assisted MEC Optimization</h3><p data-lang="zh">计算卸载中断概率分析与最小最大公平优化。</p><p data-lang="en">Outage-probability analysis and min-max fairness optimization for computation offloading.</p><strong>View repository ↗</strong></a>
-        </div>
-      </section>
-
-      <section class="contact-section">
-        <div class="section-shell contact-inner reveal">
-          <p class="eyebrow"><span data-lang="zh">保持联系</span><span data-lang="en">Get in Touch</span></p>
-          <h2><span data-lang="zh">欢迎交流与合作</span><span data-lang="en">Open to Research Conversations</span></h2>
-          <p><span data-lang="zh">如果你对 MIMO、智能编码或下一代无线传输感兴趣，欢迎通过邮件联系。</span><span data-lang="en">If you are interested in MIMO, intelligent coding, or next-generation wireless transmission, feel free to reach out.</span></p>
-          <a class="button button-light" href="mailto:jinliang15@nudt.edu.cn">jinliang15@nudt.edu.cn</a>
-        </div>
-      </section>
+      <footer class="footer">Last updated: September 2026</footer>
     </main>
-
-    <footer>
-      <div class="section-shell footer-inner">
-        <p>© <span id="year"></span> Liang Jin</p>
-        <a href="#top"><span data-lang="zh">返回顶部 ↑</span><span data-lang="en">Back to top ↑</span></a>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
